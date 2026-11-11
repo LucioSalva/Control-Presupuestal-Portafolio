@@ -1,0 +1,49 @@
+# --- Env / secrets ---
+.env
+.env.*
+!.env.docker.example
+server/.env
+!server/.env.example
+
+# --- Node ---
+node_modules/
+**/node_modules/
+npm-debug.log*
+
+# --- DB dumps locales (datos municipales - NO subir) ---
+docker-initdb/
+*.backup
+*.dump
+*.sql.gz
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Build outputs ---
+server/public/dist/
+
+# --- Uploads runtime ---
+server/uploads/
+
+# --- Logs ---
+*.log
+
+# --- Herramientas de IA (config local) ---
+.claude/
+CLAUDE.md
+AGENTS.md
+
+# --- Coverage / tests ---
+coverage/
+.nyc_output/
+
+# --- Documentos institucionales (no versionar) ---
+*.pdf
+*.xlsx
+*.csv
+*.bak
